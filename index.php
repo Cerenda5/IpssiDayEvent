@@ -58,7 +58,7 @@
         
         <div id ="section2">
             <div class="desc_container">
-                <h2 class="desc_h2">Qu'est-ce que l'IPSSY Day ?</h2>
+                <h1 class="desc_h1">Qu'est-ce que l'IPSSY Day ?</h1>
                 <div class="desc_items">
 
                     <div class="desc_nb_container">
