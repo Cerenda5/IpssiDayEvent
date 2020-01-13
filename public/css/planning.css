@@ -1,3 +1,7 @@
+#section4 {
+    padding-top: 5%;
+}
+
 .planning_color_main {
     background-color: rgb(28, 124, 193);
 }
@@ -12,7 +16,6 @@
 
 .planning_container {
     text-align: center;
-    margin: 40px 0;
 }
 
 .planning_tab {

@@ -1,9 +1,13 @@
+#section2 {
+    padding-top: 5%;
+}
+
 .desc_container {
     text-align: center;
 }
 
-.desc_h2 {
-    margin: 5%;
+.desc_items {
+    margin-top: 6%;
 }
 
 .desc_text_container{

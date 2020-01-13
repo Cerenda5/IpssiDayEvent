@@ -1,4 +1,7 @@
-/* Style de la section Formulaire; */
+#section5 {
+    padding-top: 5%;
+}
+
 .formulaire{
     max-width: 400px;
     margin: 50px auto;
