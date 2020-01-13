@@ -1,0 +1,85 @@
+.planning_color_main {
+    background-color: rgb(28, 124, 193);
+}
+
+.planning_color_sec {
+    background-color: rgb(236, 63, 93);
+}
+
+.planning_color_ter {
+    background-color: rgb(114, 125, 132);
+}
+
+.planning_container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.planning_tab {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    color: white;
+}
+
+.planning_tab_content {
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.planning_tab_content_scroll {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.planning_time {
+    width: 4%;
+    height: inherit;
+    display: inline-block;
+}
+
+.planning_general_item {
+    margin-top: 5px;
+    height: calc(8% - 5px);
+    border-radius: 6px;
+}
+
+.planning_center_all_init {
+    transform: translateY(0%);
+}
+
+.planning_center_all {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planning_col {
+    width: calc(16.7% - 5px);
+    height: 100%;
+    display: inline-block;
+}
+
+.planning_col_item {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+    .planning_tab_content_scroll {
+        width: 180%;
+    }
+
+    .planning_time {
+        width: 6%;
+    }
+}
