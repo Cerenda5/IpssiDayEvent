@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans|Rubik:300,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/css/base.css">
+        <link rel="stylesheet" href="public/css/nav.css">
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/description.css">
         <link rel="stylesheet" href="public/css/partenaires.css">
@@ -17,11 +18,11 @@
         <link rel="stylesheet" href="public/css/inscription.css">
         <link rel="stylesheet" href="public/css/infos.css">
         <link rel="stylesheet" href="public/css/footer.css">
-        <link rel="stylesheet" href="mystyle.css">
     </head>
+
     <body>
-        <nav>
-            <ul>
+        <nav id="navbar">
+            <ul class="header_ul">
                 <li><a href="#section1">Home</a></li>
                 <li><a href="#section2">Description</a></li>
                 <li><a href="#section3">Partenaires</a></li>
@@ -30,51 +31,37 @@
                 <li><a href="#section6">Information</a></li>
             </ul>
         </nav>
-        <div id ="section1">
-            <div class="header">
-                <div class="header__texture"></div>
-                <div class="container">
-                    <div class="header__navbar">
-                        <div class="header__navbar--logo">
-                            <h1 class="header__navbar--logo-title">IpssiDayEvent</h1>
-                        </div>
-                        <div class="header__navbar--menu">
-                            <a href="" class="header__navbar--menu-link"><i class="fas fa-home"></i> Accueil</a>
-                            <a href="" class="header__navbar--menu-link"><i class="fas fa-newspaper"></i> Articles</a>
-                            <a href="" class="header__navbar--menu-link"><i class="fas fa-phone"></i> Contact</a>
-                        </div>
-                        <div class="header__navbar-toggle">
-                            <span class="header__navbar-toggle-icons"></span>
-                        </div>
-                    </div>
-                    <div class="header__slogan">
-                        <h1 class="h__slogan--title-1">L'Ecole Ipssi vous invite</h1>
-                        <h1 class="h__slogan--title-2">A la rencontre du monde digital</h1>
-                        <a href="" class="h__slogan--btn">Contactez-nous</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id ="section2">
-            <div class="desc_container">
-                <h1 class="desc_h1">Qu'est-ce que l'IPSSY Day ?</h1>
-                <div class="desc_items">
+        <img id="burger-menu" class="header__burger-menu" src="public/img/burger-menu.svg">
+        <div id="nav_cache"></div>
 
+        <section id ="section1">
+            <article class="header">
+                <div class="header__texture"></div>
+                <div class="header__text">
+                    <h1 class="header__h1">L'Ecole Ipssi vous invite</h1>
+                    <h2 class="header__h1_baseline">A la rencontre du monde digital</h2>
+                    <a href="" class="header__btn">Contactez-nous</a>
+                </div>
+            </article>
+        </section>
+        
+        <section id ="section2">
+            <article>
+                <h1 class="color_prim">Qu'est-ce que l'IPSSY Day ?</h1>
                     <div class="desc_nb_container">
                         <div class="desc_nb_article">
-                            <h2 class="desc_nb_h2">20</h2>
-                            <p class="desc_nb_p">Conférences</p>
+                            <h2 class="desc_nb_h2 color_prim">20</h2>
+                            <p class="desc_nb_p color_font">Conférences</p>
                         </div>
 
                         <div class="desc_nb_article desc_center">
-                            <h2 class="desc_nb_h2">10</h2>
-                            <p class="desc_nb_p">Intervenants</p>
+                            <h2 class="desc_nb_h2 color_prim">10</h2>
+                            <p class="desc_nb_p color_font">Intervenants</p>
                         </div>
 
                         <div class="desc_nb_article">
-                            <h2 class="desc_nb_h2">300</h2>
-                            <p class="desc_nb_p">Participants</p>
+                            <h2 class="desc_nb_h2 color_prim">300</h2>
+                            <p class="desc_nb_p color_font">Participants</p>
                         </div>
                     </div>
 
@@ -85,7 +72,7 @@
                             <br/><br/>
                             Pendant une journée, L'IPPSY Paris vous ouvre ses portes pour assister à plus de 35
                             conférences dispensées par pas moins de 10 intervenants d'horizon variées.
-                            <br/><br/>                    
+                            <br/><br/>
                             Mais il y a plus encore que de simples conférences. Venez tester votre ingéniosité
                             sur nos hacks contest, confrontez vous lors de folles Kahoot party, trouvez votre
                             futur employeur à un buffets après une intense session d'apprentissage, ...
@@ -93,33 +80,18 @@
                             Vous l'aurez compris, l'IPSSY Day est un évènenement à ne pas manquer ;)
                         </p>
                     </div>
+            </article>
+        </section>
 
-                </div>
-            </div>
-        </div>
+        <section id ="section3">
+            <article class="partenaires">
+                <h1>Devenez partenaire de l'Ipssi Day</h1>
+            </article>
+        </section>
 
-        <div id ="section3">
-            <div class="partenaires">
-                <div class="container">
-                    <h1 class="h1partenaire">Devenez partenaire de l'Ipssi Day</h1>
-                    <div class="partenaires__items">
-                        <div class="partenaire" style="background: url('public/img/one.jpg'); background-size: cover;">
-                            <div class="partenaire__filter"></div>
-                            <div class="partenaire__name">Workshops</div>
-                            <div class="partenaire__icon"><i class="far fa-check-circle"></i></div>
-                        </div>
-                        <div class="partenaire" style="background: url('public/img/two.jpg'); background-size: cover;">
-                            <div class="partenaire__filter"></div>
-                            <div class="partenaire__name">Games</div>
-                            <div class="partenaire__icon"><i class="far fa-check-circle"></i></div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <div id ="section4">
-            <div class="planning_container">
-                <h1 class="planning_h1">Comment ça se passe ?</h1>
+        <section id ="section4">
+            <article class="planning_container">
+                <h1 class="planning_h1 color_prim">Comment ça se passe ?</h1>
                 <div class="planning_items">
                     <div class="planning_tab">
 
@@ -178,11 +150,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
         
-        <div id ="section5">
-            <div id="formulaire">
+        <section id ="section5" class="section_impaire">
+            <article>
 
                 <?php
                     //Verification si le mail est déjà en BDD
@@ -207,66 +179,43 @@
                     }
                 ?>
 
-                <h3 class="h3formulaire">Participez à l'Ipssi Day !</h3>
+                <h1>Participez à l'Ipssi Day !</h1>
                 
                 <form class="formulaire"  method="post">
-                    <ul>
-                        <li>
-                            <label for="nom">Nom</label>
-                            <input type="text" name="nom" maxlength="100" required>
-                            <span>Entrer votre nom</span>
-                        </li>
-                        <li>
-                            <label for="prenom">Prénom</label>
-                            <input type="text" name="prenom" maxlength="100" required>
-                            <span>Entrer votre nom</span>
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" maxlength="100" required>
-                            <span>Entrer votre Adresse Mail</span>
-                        </li>
-                        <li>
-                            <input type="submit" value="Valider" >
-                        </li>
-                    </ul>
+                    <input type="text" placeholder="Entrez votre nom" name="nom" maxlength="100" required>
+                    <input type="text" placeholder="Entrez votre prénom" name="prenom" maxlength="100" required>
+                    <input type="email" placeholder="Entrez votre Email" name="email" maxlength="100" required>
+
+                    <input type="submit" value="Valider" >
                 </form>
-            </div>
-        </div>
+            </article>
+        </section>
         
-        <div id ="section6">
-            <div class="infos">
-                <div class="container">
-                    <h1 class="h1info">Infos pratique</h1>
-                    <div class="infos__items">
-                        <div class="info" style="background: url('public/img/one.jpg'); background-size: cover;">
-                            <div class="info__filter"></div>
-                            <div class="info__name">Workshops</div>
-                            <div class="info__icon"><i class="far fa-check-circle"></i></div>
-                        </div>
-                        <div class="info" style="background: url('public/img/two.jpg'); background-size: cover;">
-                            <div class="info__filter"></div>
-                            <div class="info__name">Games</div>
-                            <div class="info__icon"><i class="far fa-check-circle"></i></div>
-                        </div>
-                        <div class="info" style="background: url('public/img/three.jpg'); background-size: cover;">
-                            <div class="info__filter"></div>
-                            <div class="info__name">Conférences</div>
-                            <div class="info__icon"><i class="far fa-check-circle"></i></div>
-                        </div>
-                        <div class="info__event"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section id ="section6">
+            <article class="infos">
+                <h1 class="h1info color_prim">Infos pratique</h1>
+            </article>
+        </section>
+
         <div class="footer">
             <footer>
                 <div class="container">
-                    <h5>Ici c'est le footer, j'ai pas trop d'inspi</h5>
+                    <h5>L’IPSSI EST UNE ÉCOLE DU GROUPE IP-FORMATION</h5>
+                    <img class="footer_logo" src="public/img/ipssi_logo_white.png">
+                    <ul class="footer_ul">
+                        <li>Paris</li>
+                        <li>Marne-la-Vallée</li>
+                        <li>Saint-Quentin-en-Yvelines</li>
+                        <li>Brest</li>
+                        <li>Nice</li>
+                        <li>Toronto</li>
+                    </ul>
+                    <h5>© Copyright 2017 - IPSSI - Création et Design : TMCC</h5>
                 </div>
             </footer>
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="public/js/planning.js"></script>
+    <script src="public/js/nav.js"></script>
 </html>

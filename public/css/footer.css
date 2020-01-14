@@ -18,3 +18,9 @@ footer {
     display: table-row;
     height: 3px;
 }
+
+.footer_ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+}
