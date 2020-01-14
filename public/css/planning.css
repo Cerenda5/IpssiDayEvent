@@ -3,15 +3,15 @@
 }
 
 .planning_color_main {
-    background-color: rgb(28, 124, 193);
+    background-color: rgba(28, 124, 193, .5);
 }
 
 .planning_color_sec {
-    background-color: rgb(236, 63, 93);
+    background-color: rgba(236, 63, 93, .5);
 }
 
 .planning_color_ter {
-    background-color: rgb(114, 125, 132);
+    background-color: rgba(114, 125, 132, .5);
 }
 
 .planning_container {
@@ -82,7 +82,15 @@
         width: 180%;
     }
 
+    .planning_tab_content {
+        width: 85%;
+    }
+
+    .planning_color_ter p {
+        font-size: 0.8em;
+    }
+
     .planning_time {
-        width: 6%;
+        width: 10%;
     }
 }
